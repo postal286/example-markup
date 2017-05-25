@@ -1,0 +1,481 @@
+/* Murkup was done by Andrey Kovalev */
+
+@font-face {
+	font-family: 'ProximaNova';
+  src: url("../fonts/ProximaNovaBold.otf");
+  src: url("../fonts/ProximaNovaBold.otf") format("opentype");
+
+  font-weight: bold;
+  font-style: normal;
+}
+
+/* Global Styles */
+
+input:focus {
+	outline-color: rgba(248,109,28,1);
+}
+
+h1, h2, h3, h4, h5, h6, ol, ul {
+	margin: 0;
+	padding: 0;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	font-size: 16px;
+  min-width: 1024px;
+	position: relative;
+	box-sizing: border-box;
+	font-family: 'PT Sans', sans-serif, Arial;
+}
+
+.container {
+	width: 1024px;
+	margin: 0 auto;
+}
+
+.sect-title {
+	margin: 0;
+	padding: 0;
+  font-size: 72px;
+  font-weight: bold;
+  text-align: center;
+	font-family: 'ProximaNova';
+	text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
+}
+
+.global-wrapper {
+	margin-top: 76px;
+	background-color: #323637;
+}
+
+/* Scrool (disable scrollbar) */
+
+html {
+	width: 100%;
+	height: 100%;
+	overflow: hidden;
+}
+
+/* Fixed menu */
+
+.top-menu-fixed-wrapper {
+	top: 0;
+	z-index: 2;
+	width: 100%;
+	height: 76px;
+	position: fixed;
+	background: rgba(0,0,0,.6);
+}
+
+.menu-inner-wrapper {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.logo-fixed {
+	display: flex;
+	margin-top: 8px;
+}
+
+.logo-fixed a img {
+  width: 254px;
+  height: 46px;
+  margin-left: 11px;
+}
+
+.top-menu-links {
+	margin-top: 35px;
+}
+
+.menu-links {
+	display: inline-block;
+}
+
+.menu-link {
+	color: #fff;
+	vertical-align: top;
+	text-decoration: none;
+}
+
+.menu-link:nth-child(1),
+.menu-link:nth-child(2) {
+  margin-right: 12px;
+}
+
+.menu-link:nth-child(2) {
+	font-weight: bold;
+}
+
+.menu-link:nth-child(3) {
+	margin-right: 13px;
+}
+
+.menu-logo img {
+  margin-top: -9px;
+  margin-right: 10px;
+}
+
+.menu {
+  margin-top: 84px;
+  margin-right: 12px;
+}
+
+.menu img {
+  margin-top: -9px;
+}
+
+/* First section */
+
+.first-sect {
+	width: 100%;
+	height: 860px;
+	background-image: url(../img/first-sect-bg.png);
+	background-size: cover;
+}
+
+.first-sect .logo-static img {
+  margin-top: -13px;
+  margin-left: -86px;
+}
+
+.second-menu {
+  padding-top: 60px;
+}
+
+.first-sect-content .sect-title {
+
+  color: #fff;
+  margin-top: 135px;
+}
+
+.first-sect-content .sect-subtitle {
+  color: #fff;
+  font-size: 24px;
+  margin-top: 13px;
+  text-align: center;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+}
+
+.form-wrapper {
+	text-align: center;
+}
+
+#get-started {
+  margin-top: 133px;
+	display: inline-flex;
+	justify-content: center;
+	-webkit-box-shadow: 0px 3px 10px -1px rgba(0,0,0,0.59);
+	-moz-box-shadow: 0px 3px 10px -1px rgba(0,0,0,0.59);
+	box-shadow: 0px 3px 10px -1px rgba(0,0,0,0.59);
+}
+
+#get-started .get-started-text {
+  width: 620px;
+  border: 0px;
+  display: flex;
+  color: #9b9b9b;
+  font-size: 16px;
+  font-family: 'PT Sans';
+  border-top-left-radius: 3px;
+  padding: 14px 0px 18px 22px;
+  border-bottom-left-radius: 3px;
+}
+
+#get-started .get-started-submit {
+  margin: 0;
+  border: 0px;
+  width: 225px;
+	padding: 15px;
+  color: #ffffff;
+  font-size: 18px;
+  font-weight: bold;
+  font-family: 'ProximaNova';
+  border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px;
+  background: rgba(250,216,96,1);
+  background: -moz-linear-gradient(left, rgba(250,216,96,1) 0%, rgba(248,109,28,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(250,216,96,1)), color-stop(100%, rgba(248,109,28,1)));
+  background: -webkit-linear-gradient(left, rgba(250,216,96,1) 0%, rgba(248,109,28,1) 100%);
+  background: -o-linear-gradient(left, rgba(250,216,96,1) 0%, rgba(248,109,28,1) 100%);
+  background: -ms-linear-gradient(left, rgba(250,216,96,1) 0%, rgba(248,109,28,1) 100%);
+  background: linear-gradient(to bottom, rgba(250,216,96,1) 0%, rgba(248,109,28,1) 100%); 
+}
+
+/* Second section */
+
+.second-sect {
+	width: 100%;
+	height: 607px;
+	margin-top: 169px;
+	background-image: url(../img/second-sect-bg.png);
+	background-size: cover;
+}
+
+.second-sect-items-wrapper {
+	display: flex;
+  padding-top: 145px;
+}
+
+.second-sect-item-wrapper {
+  flex-grow: 1;
+  height: auto;
+	width: 33.33%;
+	text-align: center;
+}
+
+.second-sect-item-wrapper img {
+  width: auto;
+  height: 142px;
+}
+
+.second-sect-item-wrapper .item-title {
+  color: #ffffff;
+	margin-top: 60px;
+  font-size: 23.8px;
+  font-weight: bold;
+  text-align: center;
+  position: relative;
+	font-family: 'ProximaNova';
+}
+
+.second-sect-item-wrapper .item-title:after {
+	left: 0;
+	right: 0;
+  content: '';
+	height: 3px;
+	width: 126px;
+	bottom: -12px;
+	margin: 0 auto;
+	position: absolute;
+  background: rgba(250,216,96,1);
+  background: -moz-linear-gradient(left, rgba(250,216,96,1) 0%, rgba(248,109,28,1) 100%);
+  background: -webkit-gradient(left top, right top, color-stop(0%, rgba(250,216,96,1)), color-stop(100%, rgba(248,109,28,1)));
+  background: -webkit-linear-gradient(left, rgba(250,216,96,1) 0%, rgba(248,109,28,1) 100%);
+  background: -o-linear-gradient(left, rgba(250,216,96,1) 0%, rgba(248,109,28,1) 100%);
+  background: -ms-linear-gradient(left, rgba(250,216,96,1) 0%, rgba(248,109,28,1) 100%);
+  background: linear-gradient(to right, rgba(250,216,96,1) 0%, rgba(248,109,28,1) 100%); 
+}
+
+.second-sect-item-wrapper .item-description {
+  color: #ffffff;
+  margin-top: 25px;
+  font-size: 15.9px;
+  font-family: 'PT Sans';
+}
+
+/* Third section */
+
+.third-sect {
+  margin-top: 255px;
+}
+
+.third-sect-items-wrapper {
+  display: flex;
+}
+
+.third-sect-item-wrapper {
+  width: 50%;
+	display: inline-flex;
+}
+
+.third-sect-item-wrapper .item-content {
+	width: 100%;
+  height: 100%;
+  margin-left: 15px;
+	position: relative;
+  background-color: #ffffff;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+.third-sect-item-wrapper .item-content:after {
+  top: 30px;
+  left: 30px;
+  content: '';
+	width: 423px;
+  height: 431px;
+  border-width: 8px;
+  position: absolute;
+  border-style: solid;
+  -webkit-border-image: 
+    -webkit-gradient(linear, 0 100%, 0 0, from(rgba(247,108,28,1)), to(rgba(250, 217, 97, 1))) 1 100%;
+  -webkit-border-image: 
+    -webkit-linear-gradient(bottom, rgba(247,108,28,1), rgba(250, 217, 97, 1)) 1 100%;
+  -moz-border-image:
+    -moz-linear-gradient(bottom, rgba(247,108,28,1), rgba(250, 217, 97, 1)) 1 100%;  
+  -o-border-image:
+    -o-linear-gradient(bottom, rgba(247,108,28,1), rgba(250, 217, 97, 1)) 1 100%;
+  border-image:
+    linear-gradient(to top, rgba(247,108,28,1), rgba(250, 217, 97, 1)) 1 100%;
+}
+
+.third-sect-item-wrapper .item-content:before {
+  top: 30px;
+  left: 38px;
+  content: '';
+  width: 425px;
+  height: 431px;
+	position: absolute;
+  border-top: 8px solid #fad961;
+  border-bottom: 8px solid #f76b1c;
+}
+
+.third-sect-item-wrapper .item-content .item-title {
+  color: #1e1e1e;
+  font-size: 24px;
+  font-weight: bold;
+  padding: 95px 0 0 47px;
+	font-family: 'ProximaNova';
+}
+
+.third-sect-item-wrapper .item-content .item-image-wrap {
+  left: 15px;
+  z-index: 1;
+  top: -121px;
+  position: absolute;
+}
+
+.third-sect-item-wrapper .item-content .item-image-wrap:after {
+  top: 35px;
+  right: -318px;
+  color: #4a4a4a;
+  font-size: 72px;
+  font-weight: bold;
+	position: absolute;
+	content: 'How it w';
+	font-family: 'ProximaNova';
+}
+
+.third-sect-item-wrapper:nth-child(2) .item-content .item-image-wrap:after {
+  right: -110px;
+	content: 'rks';
+}
+
+.third-sect-item-wrapper .item-content ol {
+  counter-reset: myCounter;
+  padding: 35px 35px 110px 65px;
+}
+
+.third-sect-item-wrapper .item-content li{
+	list-style: none;
+	padding-bottom: 10px;
+}
+
+.third-sect-item-wrapper .item-content li:before {
+  width: 20px;
+  height: 30px;
+  color: #1e1e1e;
+  font-size: 24px;
+  font-weight: bold;
+  text-align: center;
+  padding-right: 19px;
+  display: inline-block;
+	content:counter(myCounter);
+	font-family: 'ProximaNova';
+	counter-increment: myCounter;
+}
+
+/* Fourth section */
+
+.fourth-sect .sect-title {
+	display: block;
+	color: #4a4a4a;
+  margin-top: 175px;
+}
+
+.fourth-sect-items-wrapper {
+  display: flex;
+	margin-top: 30px;
+  justify-content: space-between;
+}
+
+.fourth-sect-item-wrapper {
+	width: 17%;
+  box-sizing: border-box;
+  flex-direction: column;
+  border-right: 1px solid #323637;
+}
+
+.fourth-sect-item-wrapper:last-child {
+	border: none;
+}
+
+.fourth-sect-item-wrapper .item-image img {
+  width: 100%;
+	display: block;
+}
+
+.fourth-sect-item-wrapper .item-content {
+  height: 95px;
+  background-color: #131313;
+}
+
+.fourth-sect-item-wrapper .item-name {
+  color: #ffffff;
+  font-size: 18px;
+  padding-top: 15px;
+  font-weight: bold;
+  text-align: center;
+	font-family: 'ProximaNova';
+}
+
+.fourth-sect-item-wrapper .item-genre {
+	font-size: 14px;
+  text-align: center;
+  color: #4a4a4a;
+}
+
+/* Rating */
+
+.rating {
+  direction: rtl;
+	text-align: center;
+  unicode-bidi: bidi-override;
+}
+.rating > span {
+  width: 10px;
+  color: #f5a623;
+  position: relative;
+  display: inline-block;
+}
+.rating > span:hover:before,
+.rating > span:hover ~ span:before {
+	cursor: pointer;
+  content: "\2605";
+  position: absolute;
+}
+
+/* Fifth section */
+
+.fifth-sect {
+  margin-top: 115px;
+	background-color: #151718;
+}
+
+.fifth-sect .footer {
+	height: 178px;
+	display: flex;
+	justify-content: space-between;
+}
+
+.fifth-sect .rights {
+  color: #626364;
+	font-size: 14px;
+	margin-top: 15px;
+  margin-left: 10px;
+}
+
+.fifth-sect .about-us {
+	margin-top: 13px;
+}
+
+.fifth-sect .about-us a {
+  color: #626364;
+  font-size: 14px;
+  margin-right: 10px;
+	text-decoration: none;
+}
+
+/* Murkup was done by Andrey Kovalev */
