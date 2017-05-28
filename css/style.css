@@ -50,14 +50,6 @@ body {
 	background-color: #323637;
 }
 
-/* Scrool (disable scrollbar) */
-
-html {
-	width: 100%;
-	height: 100%;
-	overflow: hidden;
-}
-
 /* Fixed menu */
 
 .top-menu-fixed-wrapper {
